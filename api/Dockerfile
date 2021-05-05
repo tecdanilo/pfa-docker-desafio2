@@ -12,4 +12,8 @@ RUN npm install
 
 COPY . .
 
+RUN npm run build
+
+RUN ls -alh
+
 CMD [ "/bin/bash", "-c", "/home/node/app/run.sh" ]
