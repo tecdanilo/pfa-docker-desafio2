@@ -4,11 +4,9 @@ version : '3'
 services:
 
   app:
-    build: ./api/
+    build: ./api
     container_name: nest_api
     hostname: nest_api
-    volumes:
-      - ./api/:/home/node/app
     env_file:
       .env_nest
     depends_on:
